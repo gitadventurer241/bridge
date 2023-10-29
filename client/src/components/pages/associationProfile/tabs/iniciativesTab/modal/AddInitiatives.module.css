@@ -1,0 +1,19 @@
+.modal {
+  width: 70% !important;
+}
+
+.description {
+  min-height: 30rem !important;
+}
+
+.rowContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+}
+
+.width {
+    width: 100%;
+}

@@ -1,0 +1,85 @@
+.editSkillsDiv {
+  padding: 2rem 3rem;
+}
+
+.labelClassSelected {
+  background-color: var(--label-color);
+  border-radius: var(--tag-radius);
+}
+
+.labelHardSkill {
+  background-color: var(--white);
+  border-radius: var(--tag-radius);
+  border: 1px solid var(--gray-dark);
+  cursor: pointer;
+}
+
+.labelHardSkill:hover {
+  background-color: var(--gray-bright);
+}
+
+.labelSoftSkill {
+  background-color: var(--gray-bright);
+  border-radius: var(--tag-radius);
+  border: 1px solid var(--gray-dark);
+  cursor: pointer;
+}
+
+.labelSoftSkill:hover {
+  background-color: var(--gray-light);
+}
+
+.elementInOneRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.searchInput {
+  margin: 2rem 0;
+  width: 80%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.allSkills {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.hardSkillDiv {
+  width: 100%;
+}
+
+.softSkillDiv {
+  width: 100%;
+}
+
+.candidateSkills {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.candidateHardSkills {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 50%;
+}
+
+.candidateSoftSkills {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 1rem;
+  width: 50%;
+}

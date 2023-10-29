@@ -1,0 +1,238 @@
+.main {
+  width: 100%;
+}
+
+.cardContainerTypeOfJobs {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  width: 100%;
+}
+
+.typeOfJobs {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+.cardContainerSkills {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  width: 100%;
+}
+
+.cardContainerValues {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  width: 100%;
+}
+
+.cardContainerExperiences {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  width: 100%;
+}
+
+.label {
+  background-color: var(--label-color);
+  border-radius: var(--tag-radius);
+  margin: 0 1rem 1rem 0;
+}
+
+.values {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0 0 1rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0 0 1rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
+}
+
+.rowMargin {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 4rem 2rem 2rem;
+}
+
+.associationContainer {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.associations {
+  /* padding: 2rem; */
+  margin-left: 1rem;
+}
+
+.language {
+  padding: 0 2rem;
+}
+
+.documents {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.cv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.resumeElements {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin: 0 2rem 2rem 2rem;
+}
+
+.resumeElements p {
+  margin: 0;
+}
+
+.customClass {
+  margin: 0 2rem 2rem 2rem;
+}
+
+.margin {
+  margin: 0 0 1rem 1rem;
+}
+
+.skillsTitle {
+  margin-bottom: 0;
+}
+
+.hr {
+  margin: 3rem 3rem;
+}
+
+.hrDocs {
+  margin: 3rem 3rem;
+  height: 5rem;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.visa {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.applyButton {
+  width: 100%;
+  margin-top: 1rem;
+  background-color: var(--blue-medium);
+  color: white;
+  font-size: large;
+}
+
+.requestPackage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: var(--secton-width);
+  height: var(--secton-height) / 2;
+  padding: 0 2rem 2rem;
+  box-sizing: border-box;
+  background-color: var(--blue-dark);
+  margin-bottom: 2rem;
+}
+
+.lowerContainer {
+  min-height: 30rem;
+  padding: 3rem;
+  width: 100%;
+  margin-top: 2rem;
+  align-self: stretch;
+}
+
+.blurredText {
+  @extend .lowerContainer;
+  filter: blur(5px);
+}
+
+.requestAccessTitle {
+  color: white;
+}
+
+
+.jobPrefContainer {
+  padding: 3rem;
+  width: 100%;
+}
+
+.jobPrefBlur {
+  @extend .jobPrefContainer;
+  filter: blur(5px);
+}
+
+.profileCompletedEditIcon {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.profileCompletedEditIcon h3 {
+  color: black;
+}
+
+.visibleSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: medium;
+}
+
+.oneRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+}
+
+.padding {
+  padding: 0 3rem;
+}

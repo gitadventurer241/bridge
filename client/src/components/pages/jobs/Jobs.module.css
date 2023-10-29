@@ -1,0 +1,104 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 3rem;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  color: black;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  width: 99%;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.noResultText {
+  text-align: center;
+  padding: 20px;
+  font-size: 15rem;
+  font-style: italic;
+  font-weight: 100;
+  color: var(--gray-medium);
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.multiFilter {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.searchText {
+  width: 80rem;
+  max-width: 100%;
+}
+
+.sortByDate {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  color: var(--grey-8, #595959);
+  margin-bottom: -1rem;
+  margin-top: 2rem;
+  width: 99%;
+}
+
+.count {
+  color: var(--color-button);
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.sortBy {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  background: none;
+  border: none;
+  color: var(--grey-8, #595959);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .jobHeader {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .multiFilter {
+    flex-direction: column;
+  }
+}

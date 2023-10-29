@@ -1,0 +1,51 @@
+.horizontalLine {
+  border-top: 1px solid #ccc;
+  height: 60%;
+  margin: 0 1.5rem;
+}
+
+.section {
+  /* max-width: 30rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2rem;
+}
+
+.containerVisibleInfo {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem 2rem 2rem 0;
+  /* border: 1px solid #ccc; */
+  /* background-color: #f9f9f9; */
+}
+
+.inOneRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  color: var(--gray-medium);
+  margin: 0.5rem;
+}
+
+.subtitle {
+  margin: 0.5rem;
+}
+
+.text {
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+
+.subtext {
+  color: var(--gray-medium);
+  font-size: 1.2rem;
+  margin: 0.5rem;
+}

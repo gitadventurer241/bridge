@@ -1,0 +1,53 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 3rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 5rem;
+  margin: 0;
+}
+
+.link {
+  margin-bottom: 0;
+}
+
+.margin {
+  margin: 2rem;
+}
+
+.locationText {
+  font-size: medium;
+  color: var(--gray-light);
+  margin: 1rem 0;
+}
+
+.locationTextYes {
+  font-size: medium;
+  color: var(--gray-dark);
+  margin: 1rem 0;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: medium;
+  gap: 0.9rem;
+  margin: 0;
+}

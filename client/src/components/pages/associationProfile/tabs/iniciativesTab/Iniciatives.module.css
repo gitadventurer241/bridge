@@ -1,0 +1,19 @@
+.mainSection {
+  padding: 2rem 3rem;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.titles {
+  font-size: 3rem;
+}
+
+.button {
+  color: var(--white);
+  background-color: var(--blue-dark);
+}

@@ -1,0 +1,31 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 3rem;
+}
+
+.panel {
+  background-color: var(--blue-lighter);
+  border: none;
+  font-size: large;
+  font-weight: 700;
+  margin: 2rem;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.answer {
+  width: 90%;
+  font-size: medium;
+  font-weight: 500;
+  padding: 2rem 1rem;
+  line-height: 2.5rem;
+  text-align: justify;
+  text-justify: inter-word;
+}

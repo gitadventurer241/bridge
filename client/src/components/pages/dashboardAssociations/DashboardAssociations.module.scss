@@ -1,0 +1,140 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 3rem;
+}
+
+.logo {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0;
+}
+
+.profile {
+  display: flex;
+  align-items: flex-start;
+  padding: 3rem;
+  margin-bottom: 2rem;
+}
+
+.header {
+  flex-grow: 1; /* Allow the text to take up remaining space */
+  text-align: left;
+  padding-left: 2rem;
+  color: var(--gray-dark);
+}
+
+.headerTitle {
+  margin: 0;
+}
+
+.subheader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--gray-medium);
+  cursor: pointer;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.9rem;
+  font-size: large;
+  color: var(--gray-medium);
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: var(--secton-width);
+  height: var(--secton-height) / 2;
+  padding: 0 2rem 2rem;
+  box-sizing: border-box;
+}
+
+.progressSection {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: var(--secton-height) / 2;
+}
+
+.progressBar {
+  flex-grow: 1;
+  margin-right: 1rem;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  min-height: 10rem;
+  padding-top: 2rem;
+}
+
+.invites {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.inviteSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: var(--secton-width);
+  height: var(--secton-height);
+  padding: 3rem;
+}
+
+.inviteHeader {
+  margin: 0;
+  color: var(--font-color);
+}
+
+.inviteButton {
+  align-self: flex-end;
+  width: 20rem;
+}
+
+.tables {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.requests {
+  width: 100%;
+  padding: 1rem;
+}
+
+.accept {
+  padding: 0.5rem 1.5rem;
+  margin-right: 1rem;
+  background-color: rgb(152, 208, 171);
+  border: 0.01rem solid var(--gray-medium);
+  border-radius: var(--border-radius);
+  color: var(--gray-dark);
+  cursor: pointer;
+  font: inherit;
+}
+
+.reject {
+  @extend .accept;
+  background-color: rgb(244, 172, 172);
+}
+
+.titleTables {
+  padding: 2rem 2rem 3rem;
+}

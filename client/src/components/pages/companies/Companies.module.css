@@ -1,0 +1,29 @@
+.main {
+  padding: 2rem 4rem;
+  min-height: 100vh;
+  background-color: var(--blue-lighter);
+}
+
+.header {
+  text-align: left;
+  color: var(--gray-dark);
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.filterDropdown {
+  display: flex;
+  gap: 2rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+}

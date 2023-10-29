@@ -1,0 +1,69 @@
+.modal {
+  width: 70% !important;
+}
+
+.header {
+  font-size: 2rem;
+}
+
+.input {
+  margin: 1rem 0;
+}
+
+.inputNumber {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.description {
+  min-height: 30rem !important;
+}
+
+.dropdown {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.twoColumn {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.sider {
+  width: 100%;
+}
+
+.autocomplete {
+  display: flex;
+  gap: 1rem;
+}
+
+.labelContainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 20rem;
+}
+
+.label {
+  font-size: 1.5rem;
+  background-color: var(--gray-bright);
+  border-radius: var(--tag-radius);
+  margin: 0.5rem;
+}
+
+.salary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sectionName {
+  margin-bottom: 0;
+}
+
+.labelContainer {
+  display: flex;
+  gap: 1rem;
+}

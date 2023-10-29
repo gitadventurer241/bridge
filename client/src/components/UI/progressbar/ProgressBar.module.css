@@ -1,0 +1,14 @@
+.progressBar {
+  width: 100%;
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--gray-bright);
+  overflow: hidden;
+  text-align: center;
+}
+
+.progressCompleted {
+  height: 100%;
+  background-color: var(--blue-dark); /* Completion color */
+  border-radius: var(--border-radius);
+}

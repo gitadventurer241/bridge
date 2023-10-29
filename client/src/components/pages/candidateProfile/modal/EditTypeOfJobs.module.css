@@ -1,0 +1,28 @@
+.labelClassSelected {
+  background-color: var(--label-color);
+  border-radius: var(--tag-radius);
+}
+
+.labelClass {
+  background-color: var(--white);
+  border-radius: var(--tag-radius);
+  border: 1px solid var(--gray-dark);
+  cursor: pointer;
+}
+
+.labelClass:hover {
+  background-color: var(--gray-bright);
+}
+
+.elementInOneRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.searchInput {
+  margin: 2rem 0;
+  width: 80%;
+}

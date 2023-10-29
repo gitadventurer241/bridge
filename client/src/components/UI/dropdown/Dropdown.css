@@ -1,0 +1,5 @@
+.ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-title-content {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}

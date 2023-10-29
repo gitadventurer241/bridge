@@ -1,0 +1,28 @@
+.label {
+  background-color: var(--label-color);
+  border-radius: var(--tag-radius);
+}
+
+.labelContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+}
+
+.labelIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.labelCloseIcon {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}

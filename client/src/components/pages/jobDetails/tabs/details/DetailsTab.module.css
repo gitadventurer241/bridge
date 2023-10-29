@@ -1,0 +1,107 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 3rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rowEnd {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titles {
+  font-size: 2.2rem;
+}
+
+.h2Title {
+  font-size: 1.7rem;
+  margin-bottom: 0;
+}
+
+.jobTitle {
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+
+.cardCont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.5rem 3rem 3rem;
+  box-sizing: border-box;
+  margin-top: 1.5rem;
+}
+
+.skillsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.sideSkills {
+  width: 100%;
+}
+
+.applyDiv {
+  background-color: var(--blue-dark);
+  color: white;
+}
+
+.applyButton {
+  width: 100%;
+  margin-top: 1rem;
+  background-color: var(--blue-medium);
+  color: white;
+  font-size: large;
+}
+
+.companyButton {
+  background-color: var(--blue-darker);
+  color: white;
+}
+
+.companyTitle {
+  margin-bottom: 3rem;
+}
+
+.applyButton {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.companyName {
+  margin-bottom: 0;
+}
+
+.allWidth {
+  width: 100%;
+}
+
+.labelDiv {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.label {
+  background-color: var(--label-color);
+  border-radius: var(--tag-radius);
+  padding: 1rem;
+}
+
+.savedBookmark {
+  fill: black;
+}

@@ -1,0 +1,293 @@
+/* CandidateProfile.module.css */
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 3rem;
+}
+
+.h3 {
+  margin: 0 0 1rem 1rem;
+  font-size: 2rem;
+}
+
+.preferredTitle {
+  font-size: 2rem;
+  margin: 0;
+  align-items: center;
+}
+
+.profileSectionElement {
+  width: var(--secton-width);
+  box-sizing: border-box;
+}
+
+.profileComponent {
+  display: flex;
+  align-items: flex-start;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.profileComponent p {
+  margin: 0;
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.profile h3 {
+  font-size: 3.5rem;
+  color: black;
+  margin: 0;
+}
+
+.profileTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.jobStatusTag {
+  border-radius: var(--tag-radius);
+  padding: 0.2rem 0.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--gray-dark);
+}
+
+.jobStatusTag h4 {
+  margin: 0.3rem 1rem;
+}
+
+.transparentGreen {
+  background-color: rgba(124, 222, 124, 0.4);
+}
+
+.transparentRed {
+  background-color: rgba(168, 36, 53, 0.4);
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.9rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  color: black;
+  font-size: large;
+}
+
+/* Profile completed */
+.profileCompletedComponent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.profileCompletedFieldsComponent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  gap: 5rem;
+}
+
+.profileCompletedElement {
+  padding: 3rem;
+  width: 100%;
+  height: 35rem;
+}
+
+.profileCompletedFieldsElement {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.column {
+  flex: 1;
+}
+
+.profileCompletedEditIcon {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.profileCompletedEditIcon h3 {
+  color: black;
+}
+
+.editIcon {
+  margin-left: auto;
+}
+
+.padding {
+  padding: 0 1rem;
+}
+
+.contactParagraph {
+  margin-top: 4rem;
+  font-size: medium;
+}
+
+/* Associations */
+.secondContainer {
+  padding: 3rem;
+  min-height: 20rem;
+  width: 100%;
+}
+
+.associationContainer {
+  padding: 3rem;
+  min-height: 20rem;
+  width: 40%;
+}
+
+.profileCompletedEditIcon h2 {
+  margin-bottom: 1rem;
+}
+
+.associationContainerLabels {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+/* Type of jobs */
+.inOneRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.lowerContainer {
+  min-height: 30rem;
+  padding: 3rem;
+  width: 100%;
+}
+
+/* Skills */
+.skillsContainer {
+  padding: 3rem;
+  margin-bottom: 2rem;
+}
+
+.skillsContainerLabels {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+/* Values */
+.valuesContainer {
+  padding: 3rem;
+  margin-bottom: 1rem;
+  width: 80%;
+  min-height: 25rem;
+  align-self: stretch;
+}
+
+.experienceContainer {
+  padding: 3rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  min-height: 25rem;
+  align-self: stretch;
+}
+
+.valuesContainerLabels {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.labelClass {
+  background-color: var(--label-color);
+  border-radius: var(--tag-radius);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  gap: 1rem;
+}
+
+.visibleContainer {
+  padding: 3rem;
+  width: 100%;
+}
+
+.visibleSectionComplete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: large;
+}
+
+.visibleSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: medium;
+}
+
+.jobPrefContainer {
+  padding: 3rem;
+  width: 100%;
+}
+
+.dottedLine {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='16' ry='16' stroke='%23CFCFCFFF' stroke-width='2' stroke-dasharray='18%2c 10' stroke-dashoffset='100' stroke-linecap='butt'/%3e%3c/svg%3e");
+  border-radius: 16px;
+}
+
+.stillToAdd {
+  color: var(--gray-light);
+}
+
+.unbiasedSearch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 5% 0;
+}
+
+.unbiasedSearch p {
+  max-width: 30rem;
+}
+
+@media (max-width: 768px) {
+  .inOneRow {
+    flex-wrap: wrap;
+  }
+}

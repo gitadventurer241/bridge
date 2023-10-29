@@ -1,0 +1,85 @@
+.main {
+  min-height: 100vh;
+  padding: 3rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.header {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 4rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--gray-medium);
+}
+
+.logo {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.icon {
+  margin-left: auto;
+}
+
+.description {
+  padding: 2rem;
+  font-size: 16px;
+  text-align: left;
+  border-top: 0.1rem solid var(--gray-bright);
+}
+
+.mainSection {
+  padding: 2rem 3rem;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.titles {
+  font-size: 3rem;
+}
+
+.button {
+  color: var(--white);
+  background-color: var(--blue-dark);
+}
+
+.subtext {
+  font-size: 1.5rem;
+  color: var(--gray-medium);
+}
+
+.labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.labelClass {
+  background-color: var(--values-label);
+  border-radius: var(--tag-radius);
+}

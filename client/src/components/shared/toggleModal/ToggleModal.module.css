@@ -1,0 +1,49 @@
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.button {
+  width: 70%;
+  color: var(--white);
+  background-color: var(--blue-darker);
+}
+
+.title {
+  margin: 1rem;
+}
+
+.subtitle {
+  margin: 1rem;
+  color: var(--gray-medium);
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.field {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0.5rem;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.text {
+  width: 80%;
+  height: 10rem !important;
+  margin-top: 4rem;
+}

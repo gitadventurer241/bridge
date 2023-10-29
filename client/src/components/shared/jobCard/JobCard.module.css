@@ -1,0 +1,128 @@
+.jobHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jobDescription {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font: size 1.6rem;
+  margin: 1.5rem 0;
+}
+
+.skillTag {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 41rem;
+  margin: 2rem 2rem 2rem 0;
+  background-color: #fdfdfd;
+  box-shadow: 0.2rem 0.4rem 0.4rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.8rem;
+  text-align: left;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 8rem;
+  height: 8rem;
+}
+
+.jobTitle {
+  font-size: 2rem;
+  color: var(--grayDark);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.jobTitle:hover {
+  text-decoration: underline;
+}
+
+.companyName {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--gray-medium);
+  margin: 0;
+}
+
+.horizontalLine {
+  border: 0;
+  border-top: 0.2rem solid #ddd;
+  margin: 2rem 0;
+}
+
+.iconAndText {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--gray-medium);
+}
+
+.iconAndText span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--grey-8, #595959);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.2rem;
+}
+
+.iconAndText svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  vertical-align: middle;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  overflow: hidden;
+}
+
+.skillTag div {
+  border-radius: var(--tag-radius);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.savedBookmark {
+  fill: black;
+}
+
+.hardSkill {
+  background-color: var(--skills-label);
+}
+
+.softSkill {
+  background-color: var(--softSkills-label);
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-wrap: wrap;
+  }
+}

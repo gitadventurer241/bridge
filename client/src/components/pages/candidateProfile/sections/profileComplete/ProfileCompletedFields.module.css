@@ -1,0 +1,31 @@
+.profileCompleted {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+}
+
+.profileCompletedIcon {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  color: var(--primary-color);
+}
+
+.profileCompletedText {
+  color: var(--primary-color);
+  margin: 0.5rem 0;
+}
+
+.profileUncompletedButton {
+  background-color: var(--white);
+  border: 1px solid var(--gray-dark);
+  cursor: pointer;
+  margin: 0;
+  font-size: 1.2rem;
+  height: 2.5rem !important;
+  border-radius: 0.5rem;
+}

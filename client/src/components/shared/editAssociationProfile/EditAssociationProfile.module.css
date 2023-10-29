@@ -1,0 +1,50 @@
+.modal {
+    width: 70% !important;
+  }
+  
+  .header {
+    font-size: 2rem;
+  }
+  
+  .input {
+    margin: 1rem 0;
+  }
+  
+  .description {
+    min-height: 20rem !important;
+  }
+  
+  .autocomplete {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .twoColumn {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .labelContainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 20rem;
+  }
+  
+  .section {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .sectionName {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .label {
+    font-size: 1.5rem;
+    background-color: var(--gray-bright);
+    border-radius: var(--tag-radius);
+    margin: 0.5rem;
+  }
+  

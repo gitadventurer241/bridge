@@ -1,0 +1,30 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  align-items: center;
+  column-gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.button {
+  margin-left: 1.5rem;
+}
+
+.cancel {
+  color: red;
+  border-color: red;
+}
+
+.inputButton {
+  width: 80%;
+}
+
+.select {
+  margin-bottom: 0 !important;
+}
+
+.marginBottom {
+  margin: 2rem 0 3rem 0;
+}

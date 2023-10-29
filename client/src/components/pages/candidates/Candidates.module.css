@@ -1,0 +1,42 @@
+.main {
+  padding: 2rem 4rem;
+  min-height: 100vh;
+  background-color: var(--blue-lighter);
+}
+
+.header {
+  color: black;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.filterDropdown {
+  display: flex;
+  gap: 1rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sortByDate {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  color: var(--grey-8, #595959);
+  margin-bottom: -1rem;
+  margin-top: 2rem;
+  width: 99%;
+}
+
+.count {
+  color: var(--color-button);
+  font-size: 1.5rem;
+  font-weight: bolder;
+}

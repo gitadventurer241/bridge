@@ -1,0 +1,8 @@
+{
+  "redirects": [
+    {
+      "source": "api/(.*)",
+      "destination": "https://banana-builders.onrender.com/api/$1"
+    }
+  ]
+}

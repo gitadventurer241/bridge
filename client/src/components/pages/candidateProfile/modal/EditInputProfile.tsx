@@ -1,0 +1,3 @@
+const EditInputProfile = () => {};
+
+export { EditInputProfile };

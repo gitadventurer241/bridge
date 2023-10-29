@@ -1,0 +1,22 @@
+.main {
+  padding: 2rem 4rem;
+  min-height: 100vh;
+  background-color: var(--blue-lighter);
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.filterDropdown {
+  display: flex;
+  gap: 1rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}

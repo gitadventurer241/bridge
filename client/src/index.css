@@ -1,0 +1,50 @@
+/* Variables */
+:root {
+  --secton-height: 20rem;
+  --secton-width: 100%;
+  --border-radius: 1.6rem;
+  --border-thickness: 0.1rem;
+  --section-padding: 2rem;
+  --sidebar-width: 24rem;
+  --tag-radius: 1rem;
+  /* Color Palette */
+  --white: #ffff;
+  --blue-lighter: #f0f5ff;
+  --blue-light: #bacae8;
+  --blue-medium: #597ef7;
+  --blue-dark: #10239e;
+  --blue-darker: #030852;
+  --gray-bright: #eeeeee;
+  --gray-light: #bfbfbf;
+  --gray-medium: #595959;
+  --gray-dark: #141414;
+  --label-color: #e4e4e4;
+  --line-color: #ccc;
+  --association-label: #c59ffd;
+  --skills-label: #a6d7c2;
+  --softSkills-label: #f5b1b1;
+  --values-label: #a4c4e4;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
