@@ -30,11 +30,10 @@ def update_candidate_route(Candidate, db):
                         setattr(candidate, key, data[key])
 
                 db.session.commit()
-                # print(candidate.to_dict())
+          
                 return jsonify({"message": "Candidate updated successfully"}), 200
 
         except Exception as e:
-            print("ERROR",e)
             return jsonify({"message": f"Error updating candidate: {e}"}), 500
 
         return jsonify({"message": "Invalid request"}), 400

@@ -112,7 +112,6 @@ def register_route(User, Candidate, Company, Association, Admin, db):
                     {"message": "User registered successfully", "user_type": user_type}
                 )
             except Exception as e:
-                print(e)
-                return jsonify({"message": "Error registering user"}), 500
+                return jsonify({"message": "Error registering user {e}"}), 500
 
     return register_bp

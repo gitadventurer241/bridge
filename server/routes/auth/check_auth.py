@@ -14,7 +14,7 @@ def check_authentication_route():
             str: JSON response indicating whether the user is authenticated.
         """
         if request.method == "GET":
-            print("current_user.is_authenticated", current_user.is_authenticated)
+            
             if current_user.is_authenticated:
                 return jsonify({"authenticated": True})
             else:

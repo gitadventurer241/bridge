@@ -31,7 +31,6 @@ def test_expiration_time():
 
 def test_signed_url():
     # Test the signed token validity
-    # secret_key = os.environ.get("SECRET_KEY")
     user_type = "candidate"
     temporary_link = generate_temporary_link_signed(user_type, expiration_time)
 

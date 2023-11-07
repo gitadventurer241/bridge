@@ -23,7 +23,8 @@ def get_candidate_by_id_route(Candidate):
 
         except Exception as e:
             jsonify({"message": f"Error getting candidate data: {e}"}), 500
+            return jsonify({"message": f"Internal Server Error"}), 500
 
-        return jsonify({"candidate": {"message": "Candidate not found"}})
+        return jsonify({"candidate": {"message": "Candidate not found"}}), 404
 
     return get_candidate_by_id_bp

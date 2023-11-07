@@ -6,7 +6,6 @@ import base64
 import os
 
 ENV = os.environ.get("FLASK_ENV", "development")
-print(f"ENV: {ENV}")
 
 if ENV == "development":
     localhost = "http://localhost:3000"
@@ -43,8 +42,6 @@ def extract_expiration_timestamp(link):
         # If "expires" parameter is not found, return None
         return None
     except Exception as e:
-        # Handle parsing errors here (e.g., log the error)
-        print("Error:", e)
         return None
 
 
@@ -54,15 +51,11 @@ def is_token_expired(temporary_link):
 
     # Get the current timestamp
     current_time = int(time.time())
-    print(f"current_time: {current_time}")
-    print(f"expiration_timestamp: {expiration_timestamp}")
 
     # Check if the token is expired
     if expiration_timestamp and current_time <= expiration_timestamp:
-        print("Link is still valid.")
         return True
     else:
-        print("Link has expired.")
         return False
 
 
@@ -116,14 +109,6 @@ def verify_temporary_link_signed(temp_link, secret_key, user_type, association):
         elif key == "association":
             association = value
 
-    # print(
-    #     f"token: {token}",
-    #     f"signature: {signature}",
-    #     f"expiration_time: {expiration_time}",
-    #     f"user_type: {user_type}",
-    #     f"association: {association}",
-    #     sep="\n",
-    # )
     if not token or not signature or expiration_time is None:
         return False
 

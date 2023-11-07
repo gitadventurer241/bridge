@@ -20,4 +20,5 @@ EXPOSE 5001
 ENV FLASK_APP=main.py
 
 # Define the command to run your Flask application
-CMD ["flask", "run", "--host", "0.0.0.0"]
+CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 main:app
+

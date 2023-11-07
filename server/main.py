@@ -153,8 +153,13 @@ def load_user(id):
     Returns:
         User: The User object associated with the provided user ID.
     """
-    print("load_user", id)
+
     return User.query.get(id)
+
+
+@app.before_request
+def log_request_info():
+    app.logger.info("Before request route: %s %s", request.method, request.path)
 
 
 @app.after_request
@@ -175,6 +180,12 @@ def after_request(response):
     response.headers.add("Access-Control-Allow-Credentials", "true")
     response.headers.add("Access-Control-Allow-Headers", "Content-Type,Authorization")
     response.headers.add("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE,OPTIONS")
+    app.logger.info(
+        "After Requested route: %s %s - Status code: %s",
+        request.method,
+        request.path,
+        response.status_code,
+    )
     return response
 
 
@@ -182,5 +193,4 @@ if __name__ == "__main__":
     # Make sure the tables exist
     db.create_all()
     # Start the server
-    print("Server started")
     app.run(port=5001, debug=True)

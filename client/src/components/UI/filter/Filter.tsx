@@ -29,8 +29,6 @@ const Filter = ({
       filteredCriteria.length === 0
         ? data
         : data.filter((item) => {
-            console.log("item", item);
-            console.log("criteria", criteria);
             if (item[criteria] && criteria === "iniciatives") {
               if (
                 item[criteria].some((field: any) =>

@@ -228,7 +228,6 @@ const CompanyProfile = () => {
       </div>
     </CardContainer>
   );
-  console.log(company);
 
   // Tabs
   const tabs = [

@@ -68,7 +68,6 @@ const DashboardCandidate: React.FC = () => {
     return countProgress;
   };
 
-  console.log("candidate", candidate);
   useEffect(() => {
     fetchInfo(auth?.user?.id);
   }, [auth?.user?.id]);

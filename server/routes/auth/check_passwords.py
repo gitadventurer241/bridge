@@ -42,7 +42,7 @@ def change_password_route(User, db):
                     new_password.encode("utf-8"), bcrypt.gensalt()
                 )
                 hashed_new_password = hashed_new_password.decode("utf-8")
-                print("PW",hashed_new_password)
+               
                 # Update the user's password in the database
                 user.password = hashed_new_password
                 db.session.commit()

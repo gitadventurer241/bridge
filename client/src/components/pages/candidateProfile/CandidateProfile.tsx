@@ -197,8 +197,6 @@ const CandidateProfile = () => {
     return <Spinner />;
   }
 
-  console.log("candidate", candidate);
-
   return (
     <div className={styling.main}>
       {/* Profile text */}

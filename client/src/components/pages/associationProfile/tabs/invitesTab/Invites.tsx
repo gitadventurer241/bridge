@@ -94,7 +94,6 @@ const InvitesComponent: React.FC<InvitesComponentProps> = ({
       const expiresInDays = Math.floor(
         7 - timeDifference / (1000 * 60 * 60 * 24)
       );
-      console.log(`${invite?.createdAt}`, expiresInDays);
 
       return {
         key: index,
@@ -114,7 +113,6 @@ const InvitesComponent: React.FC<InvitesComponentProps> = ({
       const expiresInDays = Math.floor(
         7 - timeDifference / (1000 * 60 * 60 * 24)
       );
-      console.log(expiresInDays);
 
       return {
         key: index,

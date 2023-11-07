@@ -67,8 +67,6 @@ const DocumentUploadModal: React.FC<CertificateUploadModalProps> = ({
     setVisible(false);
   };
 
-  console.log("certificates", certificates);
-
   return (
     <div>
       <IconEdit onClick={showModal} style={{ cursor: "pointer" }} />

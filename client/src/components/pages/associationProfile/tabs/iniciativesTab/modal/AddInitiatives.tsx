@@ -76,8 +76,8 @@ const AddInitiatives: React.FC<AddInitiativesProps> = ({
     };
 
     try {
-      const response = await updateAssociationById(userId, updateAssociation);
-      console.log(response);
+      await updateAssociationById(userId, updateAssociation);
+
       if (callback) {
         callback();
       }

@@ -1,38 +1,38 @@
-# Flask API README
+# Our Backend 👩🏾‍💻
 
-This is a Flask API for user registration, login, and authentication. It includes user registration, login, authentication, and some protected routes. This README provides an overview of the application and instructions on how to run it using Docker.
+Welcome to our backend project! We've built this backend with Flask, and it's organized with blueprints for clear and maintainable routing. We handle authentication using Flask-Login and establish a database connection through SQLAlchemy. Our database instance is hosted on AWS RDS.
 
-## Table of Contents
+## Key Backend Components
 
-- [Application Overview](#application-overview)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Running the Application](#running-the-application)
-- [API Endpoints](#api-endpoints)
-- [Docker](#docker)
+### Flask Framework
 
-## Application Overview
+We've chosen Flask as our framework for its simplicity and flexibility. It provides an excellent foundation for building RESTful APIs and web applications.
 
-### Dependencies
+### Blueprint Organization
 
-This Flask application utilizes the following dependencies:
+To keep our codebase clean and organized, we use blueprints to structure our routes. Each blueprint is responsible for a specific area of functionality, making it easier to manage and extend the application.
 
-- Flask for building the API.
-- Flask-CORS for Cross-Origin Resource Sharing configuration.
-- Flask-SQLAlchemy for database interaction.
-- Flask-Login for user session management.
-- Passlib for password hashing.
-- Python-dotenv for environment variable management.
+### Authentication with Flask-Login
 
-### Functionality
+User authentication is managed through Flask-Login, which simplifies user session management and allows us to protect routes and resources that require authorization.
 
-This Flask API provides the following functionality:
+### AWS RDS as Database
 
-- User registration with username, password, email, and user type (candidate or company).
-- User authentication and login.
-- User session management using Flask-Login.
-- Authentication middleware for protecting routes.
-- User data stored in a PostgreSQL database.
+Our data is stored in an AWS RDS (Relational Database Service) instance. This ensures the security, reliability, and scalability of our data storage.
+
+### Main User Table
+
+We maintain all user information in the `user` table. The user's unique ID from this table is used as a reference throughout the application. This ensures a consistent and efficient way to associate data with users.
+
+### Additional Tables
+
+We have several other tables such as `candidate`, `admin`, `company`, and `associations` all of which use the `user_id` as a foreign key to link to the main `user` table. This approach simplifies data management and ensures data integrity.
+
+### Deployment on Render with Docker
+
+Our server is deployed on Render using a Docker file. This allows for easy and efficient deployment, scaling, and management of our application.
+
+<br/>
 
 ## Requirements
 
@@ -41,48 +41,40 @@ Before you begin, ensure you have the following requirements installed on your s
 - Python 3.11 or higher
 - Docker (optional, for Docker deployment)
 
-## Installation
+<br/>
 
-1. Clone this repository to your local machine:
+## Get Started 🚀
 
-   ```bash
-   git clone https://github.com/your-username/your-repo.git
-   ```
+To run the backend locally, follow these steps:
 
-2. Navigate to the project directory:
+1. Clone this repository to your local machine.
 
 ```bash
-cd your-repo
+ git clone https://github.com/WomenPlusPlus/deploy-impact-23-shift-4.git
 ```
 
-3. Create a virtual environment and activate it (optional but recommended):
+2. Navigate to the `server` folder in your project directory.
 
 ```bash
-python -m venv venv
+cd server
+```
+
+3. Create a virtual environment and activate it (optional but recommended).
+
+```bash
+python3 -m venv venv
 source venv/bin/activate
 ```
 
-4. Install the required Python packages from the requirements.txt file:
+4. Install the required Python packages from the requirements.txt file.
 
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
-5. Create a .env file in the project root and define the following environment variables:
+5. Make sure you have the .env file in the server root with the define enviroment variables described in the `.env.example`.
 
-- **DATABASE_URI_TEST:** The URI for your PostgreSQL database.
-- **SECRET_KEY:** A secret key for session management and security.
-
-Example .env file:
-
-```plaintext
-DATABASE_URI_TEST=postgresql://your-db-user:your-db-password@localhost/your-db-name
-SECRET_KEY=your-secret-key
-```
-
-## Running the Application
-
-To run the Flask application locally, use the following command:
+6. To run the Flask application locally, use the following command.
 
 ```bash
 python3 main.py
@@ -90,47 +82,9 @@ python3 main.py
 
 The application will be accessible at http://localhost:5001.
 
-## API Endpoints
+<br/>
 
-### User Registration
-
-- **Endpoint**: `/api/register`
-- **Method**: POST
-- **Description**: Register a new user.
-- **Request JSON Body**:
-  - `username` (str): The username for the new user.
-  - `password` (str): The password for the new user (will be hashed).
-  - `email` (str): The email address of the new user.
-  - `user_type` (str): The type of user (e.g., "candidate" or "company").
-
-### User Login
-
-- **Endpoint**: `/api/login`
-- **Method**: POST
-- **Description**: Authenticate and log in a user.
-- **Request JSON Body**:
-  - `username` (str): The username of the user trying to log in.
-  - `password` (str): The password provided by the user.
-
-### User Logout
-
-- **Endpoint**: `/api/logout`
-- **Method**: GET
-- **Description**: Log out the currently authenticated user.
-
-### Protected Route
-
-- **Endpoint**: `/api/protected`
-- **Method**: GET
-- **Description**: A protected route that requires authentication.
-
-### User Deletion (Admin)
-
-- **Endpoint**: `/api/delete_user`
-- **Method**: POST
-- **Description**: Delete a user by username (Admin only).
-
-## Docker
+## Docker 🐳
 
 To run the application using Docker, follow these steps:
 

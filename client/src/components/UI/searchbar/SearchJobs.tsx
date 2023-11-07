@@ -40,7 +40,6 @@ const SearchJobs: React.FC<SearchJobsProps> = ({ onSearch, data }) => {
       })
     );
     onSearch(result);
-    console.log("h", result);
   };
 
   return (

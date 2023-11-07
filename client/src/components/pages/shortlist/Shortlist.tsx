@@ -54,7 +54,6 @@ const Shortlist = () => {
         const allCandidates = await getAllCandidates();
         // fetch all jobs from company's shortlist
         const candidatesIds = company?.saved_items;
-        console.log(candidatesIds);
 
         if (candidatesIds && candidatesIds?.length > 0) {
           // Use Promise.all to fetch candidates concurrently

@@ -52,7 +52,6 @@ const AssociationProfile = () => {
 
     if (userId) {
       const association = await getAssociationById(userId);
-      console.log(association);
       setAssociation(association);
       setIsLoading(false);
     }

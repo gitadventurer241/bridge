@@ -1,46 +1,58 @@
-# Getting Started with Create React App
+# Our Frontend 🌈
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to our frontend project! We're excited to give you a quick tour of how we've structured our frontend with a focus on reusability and maintainability.
 
-## Available Scripts
+## Reusable Component Structure 🧩
 
-In the project directory, you can run:
+At the heart of our frontend architecture is a reusable component structure. We believe in building from the ground up with components that are versatile and can be easily integrated into different parts of the application.
 
-### `npm start`
+### UI Components
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+In the `UI` folder, you'll find a collection of small UI components. These components are designed to handle specific UI elements, such as buttons, input fields, and tooltips. They serve as the building blocks for the larger components and ensure consistency in the user interface.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Bigger Reusable Components
 
-### `npm test`
+Our frontend also features bigger reusable components that are composed of these smaller UI components. These components are designed to handle more complex parts of the application, providing a high level of modularity and making it easier to maintain and scale the project.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Leveraging Ant Design
 
-### `npm run build`
+To streamline our frontend development, many of our components are built as alterations or extensions of Ant Design components. Ant Design provides a wealth of well-designed and customizable UI components, and we've built upon this foundation to create a cohesive and visually appealing user interface.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Iconography with Tabler Icons
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Icons play a crucial role in user experience, and we've integrated Tabler Icons into our project to ensure a consistent and attractive iconography. You'll find a wide range of icons from Tabler Icons used throughout the application to enhance the visual appeal and provide clear communication.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Styling Consistency with index.css
 
-### `npm run eject`
+Consistency in styling is key to a polished user interface. To maintain this consistency, we've centralized styling variables in our `index.css` file. This includes definitions for padding, margins, colors, and common styling properties. By keeping these variables in one place, we ensure a uniform look and feel across the entire application.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<br/>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Get Started 🚀
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To run the frontend locally, follow these steps:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. Clone the repository.
+```bash
+ git clone https://github.com/WomenPlusPlus/deploy-impact-23-shift-4.git
+```
+2. Navigate to the `client` folder in your project directory.
+```bash
+cd client
+```
+3. Install all dependencies.
+```bash
+npm install 
+```
+4. Start the frontend application.
+```bash
+npm start
+```
+<br/>
 
-## Learn More
+## Deployment on Vercel 🙌
+Our client is deployed on Vercel. To deploy a new version run the following command from the client root directory.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+vercel --prod
+```

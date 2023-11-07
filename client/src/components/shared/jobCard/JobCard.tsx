@@ -92,8 +92,6 @@ const JobCard: React.FC<JobCardProps> = ({
     }
   }, []);
 
-  console.log(getCompanyName(job));
-
   return (
     <>
       <Card className={styling.card}>
